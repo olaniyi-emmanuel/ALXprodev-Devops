@@ -12,4 +12,4 @@ if [$? -ne 0]; then
 fi 
 
 echo "This is the data from Pokemon"
-echo "$resource" | jq. > data.json
+echo "$resource" | jq . > data.json
