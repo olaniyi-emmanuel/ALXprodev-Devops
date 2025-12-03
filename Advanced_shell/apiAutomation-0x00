@@ -1,12 +1,12 @@
 #!/bin/bash
 
-url="https://pokeapi.co/api/v2/pokewwwmon/ditto"
+url="https://pokeapi.co/api/v2/pokemon/ditto"
 
 echo "Reaching the server to get the data..."
 
 resource=$(curl -s -X GET $url)
 
-if [$? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "Request failed to fetch data from $url" >> errors.txt
     exit 1 
 fi 
